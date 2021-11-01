@@ -1,0 +1,23 @@
+{
+  "name": "de-yan-physics",
+  "version": "0.0.1",
+  "description": "helper module to that connects cannonjs to lens for de-yan studio -> inpsired by Ashley Flectcher's lens-studio-physics",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "parcel build src/index.js --target=browser --no-minify --out-file index.js --global Physics",
+    "dev": "parcel watch src/index.js --target=browser --no-minify --out-file index.js --global Physics"
+  },
+  "keywords": [],
+  "author": "Rui AN",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "jest": "^24.7.1",
+    "parcel-bundler": "1.12.3"
+  },
+  "dependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "cannon": "github:schteppe/cannon.js"
+  }
+}
